@@ -13,7 +13,7 @@ var myFirstProgram = /** @class */ (function () {
         console.log("This method runs first ...");
     };
     myFirstProgram.prototype.runLast = function () {
-        console.log("This methods runs last ...");
+        console.log("This methods runs last!!!");
     };
     return myFirstProgram;
 }());

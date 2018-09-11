@@ -10,7 +10,7 @@ class myFirstProgram {
     }
 
     runLast() {
-        console.log("This methods runs last ...");
+        console.log("This methods runs last!!!");
     }
 }
 const newInstance = new myFirstProgram("a", "b", "c");
