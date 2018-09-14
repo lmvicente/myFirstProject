@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Web Page</title>
+    <style>
+        * {
+          margin: 0px;
+            padding: 0px;
+
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(44, 44, 44);
+
+        }
+
+        p {
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        .app-container-grid {
+            display: grid;
+            grid-template-columns: 1fr 6fr 2fr;
+            grid-template-rows: 1fr 7fr 1fr;
+            height: 100vh;
+
+
+        }
+        .main-container-grid {
+         align-self: center;
+        background-color: rgb(131, 131, 131);
+        }
+        .main-header, .main-container-grid, .app-container-grid, .main-footer {
+            grid-column: 1/4;
+        }
+        .main-header {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 35px;
+            color: #fff;
+
+        }
+    </style>
+
+<body>
+        <header class="main-header">
+                <span>LOGO</span>
+            </header>
+            <div class="main-container-grid">
+    <div class = "app-container-grid">
+<p>This is the first.</p>
+<p>This is the second.</p>
+        <p>This is the third, under a new class.</p>
+    </div>
+    </div>
+    <footer class = "main-footer">
+        <p>footer footer footer footer footer footer</p>
+    </footer>
+</body>
+</head>
+
+</html>
