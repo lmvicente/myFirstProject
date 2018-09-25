@@ -1,1 +1,1 @@
-# myFirstProject
+# MyFirstProgram

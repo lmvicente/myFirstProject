@@ -1,20 +1,23 @@
-var myFirstProgram = /** @class */ (function () {
-    function myFirstProgram() {
+var MyFirstProgram = /** @class */ (function () {
+    function MyFirstProgram() {
         var argArray = [];
         for (var _i = 0; _i < arguments.length; _i++) {
             argArray[_i] = arguments[_i];
         }
-        this.printArg(argArray);
+        this.printArgs(argArray);
     }
-    myFirstProgram.prototype.printArg = function (argArray) {
+    MyFirstProgram.prototype.printArgs = function (argArray) {
         console.log(argArray);
     };
-    myFirstProgram.prototype.runFirst = function (callback) {
-        console.log("This method runs first ...");
+    MyFirstProgram.prototype.runFirst = function (callback) {
+        console.log('this method runs first!...');
     };
-    myFirstProgram.prototype.runLast = function () {
-        console.log("This methods runs last!!!");
+    MyFirstProgram.prototype.rundLast = function () {
+        console.log('this method runs last!');
     };
-    return myFirstProgram;
+    MyFirstProgram.prototype.runMiddle = function () {
+        console.log('this code run in between the other two functions...');
+    };
+    return MyFirstProgram;
 }());
-var newInstance = new myFirstProgram("a", "b", "c");
+var newInstance = new MyFirstProgram("a", "b", "c");

@@ -1,18 +1,22 @@
-class myFirstProgram {
-    constructor(...argArray: Array<any>) {
-        this.printArg(argArray);
-    }
-    printArg(argArray) {
-        console.log(argArray);
-    }
-    runFirst(callback: Function) {
-        console.log("This method runs first ...");
-    }
-runMiddle() {
-    console.log("This runs in the middle.")
+
+
+class MyFirstProgram {
+  constructor(...argArray: Array<any>) {
+    this.printArgs(argArray);
+  }
+  printArgs(argArray) {
+    console.log(argArray);
+  }
+  runFirst(callback: Function) {
+    console.log('this method runs first!...');
+  }
+  rundLast() {
+    console.log('this method runs last!');
+  }
+  runMiddle() {
+    console.log('this code run in between the other two functions...');
+  }
 }
-    runLast() {
-        console.log("This methods runs last!!!");
-    }
-}
-const newInstance = new myFirstProgram("a", "b", "c");
+
+const newInstance = new MyFirstProgram("a", "b", "c");
+
