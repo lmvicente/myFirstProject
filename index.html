@@ -31,12 +31,23 @@
 
 
         }
-.main-header, .main-footer{
-    background-color: rgb(119, 119, 119);
 
-}
-        .main-header, .main-container-grid, .main-footer {
-        grid-column: 1/4;
+        .main-header,
+        .main-footer {
+            background-color: rgb(119, 119, 119);
+
+        }
+
+        .center {
+            justify-self: center;
+            align-self: center;
+
+        }
+
+        .main-header,
+        .main-container-grid,
+        .main-footer {
+            grid-column: 1/4;
 
         }
     </style>
@@ -45,12 +56,17 @@
     <div class="app-container-grid">
         <header class="main-header">
             <span>LOGO</span>
+            <div class="center">r1c2</div>
+            <div>r1c3</div>
         </header>
         <div class="main-container-grid">
-            middle
+            <div>r2c1</div>
+            <div>r2c2</div>
+            <div>r3c3</div>
         </div>
-        <footer class = "main-footer">
-            footer
+        <footer class="main-footer">
+            <div>r1c1</div>
+            <div>r2</div>
         </footer>
     </div>
 </body>
